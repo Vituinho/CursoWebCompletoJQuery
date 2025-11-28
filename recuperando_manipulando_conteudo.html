@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <!--<script src="jquery-3.7.1.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+
+            console.log('conteudo div 1: ', $('#div1').html())
+            console.log('conteudo div 2: ', $('#div2').html())
+
+            //Comandos utilizados para teste nessa aula
+
+            $('#div1').html('Eu sou o valor novo')
+            
+            $('#div1').html('<strong>Eu sou o valor novo</strong>')
+
+            $('#div1').html('<strong style="color: red">Eu sou o valor novo</strong>')
+
+            //o text ele retorna a string pura
+            $('#div1').text('<strong style="color: red">Eu sou o valor novo</strong>')
+
+        })
+    </script>
+</head>
+<body>
+    
+    <div id="div1" style="border:solid 1px #000; width: 150px; height: 150px;">
+        <a href="">teste</a>
+        <p>Esse é outro teste</p>
+        Texto
+        <div>Outro teste</div>
+    </div>
+
+    <div id="div2" style="border:solid 1px #000; width: 150px; height: 150px;">
+        Div 2
+    </div>
+    
+    <a href="selecionando_elementos_parte1.html">Proxima aula</a>
+</body>
+    <script>
+        
+    </script>
+</html>
