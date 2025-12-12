@@ -75,6 +75,24 @@ $(document).ready(() => {
         $('#resultadoDiv2').html('saiu')
     })
 
-    
+    $('#teclado').keyup((e) => {
+        if (e.keyCode < 97 || e.keyCode > 100) {
+            let txt = $(e.target).val()
+            txt = txt.slice(0, -1)
+            $(e.target).val(txt)
+        }
+    })    
+
+    /*
+    $('#teclado').keyup((e) => {
+        $('#resultadoTecla').html(`tecla liberada`)
+
+        if(e.keyCode === 13) {
+            let txt = $(e.target).val()
+            $('#resultadoTecla').html(txt)
+            $(e.target).val('')
+        }
+    })
+    */  
 
 })
