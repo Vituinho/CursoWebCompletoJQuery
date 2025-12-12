@@ -95,4 +95,40 @@ $(document).ready(() => {
     })
     */  
 
+    $('#nome').focus((e) => {
+        console.log('focus no input')
+        $(e.target).addClass('inputFocado')
+    })
+
+    $('#email').focus((e) => {
+        console.log('focus no input')
+        $(e.target).addClass('inputFocado')
+    })
+
+    $('#nome').blur((e) => {
+        console.log('perdeu o focus no input')
+        $(e.target).removeClass('inputFocado')
+    })
+
+    $('#email').blur((e) => {
+        console.log('perdeu o focus no input')
+        $(e.target).removeClass('inputFocado')
+    })
+
+    $('#opcao').change((e) => {
+        const opcao = $(e.target).val()
+        alert(`${opcao}`)
+    })
+
+    $('form').submit((e) => {
+        e.preventDefault()
+        alert('formulário enviado')
+    })
+
+    $('a').click((e) => { 
+        e.preventDefault()
+        alert('link bloqueado')
+    })
+
+
 })
